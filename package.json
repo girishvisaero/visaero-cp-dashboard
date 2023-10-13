@@ -1,0 +1,46 @@
+{
+  "name": "visaero-cp-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@hookform/resolvers": "^3.3.1",
+    "@mantine/core": "^6.0.20",
+    "@mantine/dates": "^6.0.20",
+    "@mantine/dropzone": "^6.0.20",
+    "@mantine/hooks": "^6.0.20",
+    "@mantine/modals": "^6.0.20",
+    "@mantine/notifications": "^6.0.20",
+    "@mantine/nprogress": "^6.0.20",
+    "@tabler/icons-react": "^2.34.0",
+    "@tanstack/react-query": "^4.35.3",
+    "@tanstack/react-query-devtools": "^4.35.3",
+    "axios": "^1.5.0",
+    "dayjs": "^1.11.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.1",
+    "react-router-dom": "^6.16.0",
+    "recharts": "^2.8.0",
+    "vite-plugin-svgr": "^3.2.0",
+    "web-vitals": "^3.4.0",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
+  }
+}
