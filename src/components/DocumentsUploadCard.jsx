@@ -8,12 +8,23 @@ import {
   Text,
   useMantineTheme,
 } from "@mantine/core";
-import React from "react";
+import { useQuery } from "@tanstack/react-query";
+import React, { memo } from "react";
+import { getVisaDocuments } from "../services";
 import UploadDragImage from "./UploadDragImage";
 
-const DocumentsUploadCard = ({ cardHeight }) => {
+const DocumentsUploadCard = ({ cardHeight, visa_id }) => {
+  const { data, isLoading } = useQuery({
+    // enabled: true,
+    queryKey: ["getUploadDocuments", visa_id],
+    queryFn: getVisaDocuments,
+  });
+  
   const theme = useMantineTheme();
   const SECTION_HEIGHT = cardHeight + 50;
+
+  console.log('data >>', data)
+
   return (
     <Paper shadow="sm" radius="md">
       <ScrollArea mx="-xs" type="always" p="xl" h={SECTION_HEIGHT}>
@@ -75,4 +86,4 @@ const DocumentsUploadCard = ({ cardHeight }) => {
   );
 };
 
-export default DocumentsUploadCard;
+export default memo(DocumentsUploadCard);

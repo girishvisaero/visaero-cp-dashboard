@@ -111,3 +111,11 @@ export const getVisaOffers = async (data) => {
     user_id,
   });
 };
+export const getVisaDocuments = async ({ queryKey }) => {
+  const [_, visa_id] = queryKey;
+  return axios.post(API.getVisaDocuments, {
+    ...data,
+    host,
+    user_id,
+  });
+};

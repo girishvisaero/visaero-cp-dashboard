@@ -29,7 +29,7 @@ const LoginCard = ({ handleIsForgotPass }) => {
   } = useForm({
     resolver: zodResolver(LoginFormSchema),
     defaultValues: {
-      email: "girish.chaudhari@visaero.com",
+      email: "girish.chaudhari@yopmail.com",
       password: "Smart@123",
     },
   });

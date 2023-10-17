@@ -13,7 +13,7 @@ import {
 
 import { useMutation, useQuery } from "@tanstack/react-query";
 import dayjs from "dayjs";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AppBar from "../../components/AppBar";
 import CountriesSelectCard from "../../components/CountriesSelectCard";
 import DatePickerComponent from "../../components/DatePickerComponent";
